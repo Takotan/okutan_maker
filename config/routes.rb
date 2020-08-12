@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'okutan_maker/home'
   resources :pmoves
   resources :moves
   resources :pokemons
