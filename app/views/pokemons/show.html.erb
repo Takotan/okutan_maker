@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pokemon.name %>
+</p>
+
+<p>
+  <strong>Hp:</strong>
+  <%= @pokemon.hp %>
+</p>
+
+<p>
+  <strong>Atk:</strong>
+  <%= @pokemon.atk %>
+</p>
+
+<p>
+  <strong>Dfc:</strong>
+  <%= @pokemon.dfc %>
+</p>
+
+<p>
+  <strong>Sat:</strong>
+  <%= @pokemon.sat %>
+</p>
+
+<p>
+  <strong>Sdf:</strong>
+  <%= @pokemon.sdf %>
+</p>
+
+<p>
+  <strong>Spd:</strong>
+  <%= @pokemon.spd %>
+</p>
+
+<%= link_to 'Edit', edit_pokemon_path(@pokemon) %> |
+<%= link_to 'Back', pokemons_path %>

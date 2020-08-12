@@ -1,0 +1,27 @@
+<%= form_with(model: pmove, local: true) do |form| %>
+  <% if pmove.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pmove.errors.count, "error") %> prohibited this pmove from being saved:</h2>
+
+      <ul>
+        <% pmove.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pokemon_id %>
+    <%= form.number_field :pokemon_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :move_id %>
+    <%= form.number_field :move_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

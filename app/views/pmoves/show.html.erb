@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pokemon:</strong>
+  <%= @pmove.pokemon_id %>
+</p>
+
+<p>
+  <strong>Move:</strong>
+  <%= @pmove.move_id %>
+</p>
+
+<%= link_to 'Edit', edit_pmove_path(@pmove) %> |
+<%= link_to 'Back', pmoves_path %>
